@@ -6,12 +6,10 @@ let arr = text.split(' ');
 // sort the array
 arr.sort((a, b) => a !== b ? a < b ? -1 : 1 : 0);
 // check the result
+console.log(arr.length);
 console.log(arr);
 
 // filter word "sensor"
-
-const result = arr.filter(word => {
-	return (word !== "sensor") ? word : "";
-});
-
+const result = arr.filter(word => (word !== "sensor"));
+console.log(result.length);
 console.log(result);
