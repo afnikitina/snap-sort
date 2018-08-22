@@ -5,11 +5,27 @@ const text = "It indicates a synchronic distortion in the areas emanating trioli
 let arr = text.split(' ');
 // sort the array
 arr.sort((a, b) => a !== b ? a < b ? -1 : 1 : 0);
+// check if the word "sensor" is still present in the array:
+arr.forEach((element) => {
+	if (element.toLowerCase() === "sensors") {
+		console.log(element);
+	}
+});
+
 // check the result
 console.log(arr.length);
 console.log(arr);
 
+
 // filter word "sensor"
-const result = arr.filter(word => (word !== "sensor") ? word : null);
+const result = arr.filter(word => (word.toLowerCase() !== "sensors") ? word : null);
+// check if the word "sensor" is still present in the array:
+result.forEach((element) => {
+	if (element === "sensor") {
+		console.log(element);
+	}
+});
+
 console.log(result.length);
 console.log(result);
+
