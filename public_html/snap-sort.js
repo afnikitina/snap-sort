@@ -18,7 +18,7 @@ console.log(arr);
 
 
 // filter word "sensor"
-const result = arr.filter(word => (word.toLowerCase() !== "sensors") ? word : null);
+const result = arr.filter(word => (word.toLowerCase() !== "sensors"));
 // check if the word "sensor" is still present in the array:
 result.forEach((element) => {
 	if (element === "sensor") {
