@@ -10,6 +10,6 @@ console.log(arr.length);
 console.log(arr);
 
 // filter word "sensor"
-const result = arr.filter(word => (word !== "sensor"));
+const result = arr.filter(word => (word !== "sensor") ? word : null);
 console.log(result.length);
 console.log(result);
